@@ -1,16 +1,6 @@
 def copy(i):
-    if (i == 1):
-        with open('a4/a3.txt') as f:
-            with open("a4/a1.txt", "w") as f1:
-                for line in f:
-                    f1.write(line)
-    if (i == 2):
-        with open('a4/a4.txt') as f:
-            with open("a4/a1.txt", "w") as f1:
-                for line in f:
-                    f1.write(line)
-    if (i == 3):
-        with open('a4/a5.txt') as f:
+        ai=i+2
+        with open('a4/a'+str(ai)+'.txt') as f:
             with open("a4/a1.txt", "w") as f1:
                 for line in f:
                     f1.write(line)
