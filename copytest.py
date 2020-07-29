@@ -16,37 +16,20 @@ def copy(i):
                     f1.write(line)
 
 def result(i, mp,mp1):
-    if(i==1):
+    if((i==1 or 2 or 3)):
       if(mp>0.1 and mp1>0.05):
-          return('Review for movie 1 contains spoilers')
+          return('Review for movie contains spoilers')
       else:
-          return('Review for movie 1  doesnt contain spoilers')
-    if (i == 2):
-        if (mp>0.1 and mp1>0.05):
-            return ('Review for movie 2 contains spoilers')
-        else:
-            return ('Review for movie 2 doesnt contain spoilers')
-    if (i == 3):
-        if (mp>0.1 and mp1>0.05):
-            return ('Review for movie 3 contains spoilers')
-        else:
-            return ('Review for movie 3 doesnt contain spoilers')
+          return('Review for movie doesnt contain spoilers')
+    else:
+       return('The reference synopsis for this movie hasnt been updated yet')
 
 def resultshort(i, mp,mp1):
-    if(i==1):
-      if((mp>0.05) and (mp1>0.01)):
-          return('Review for movie 1 is small, it contains spoilers')
+    if((i==1 or 2 or 3)):
+      if(mp>0.1 and mp1>0.05):
+          return('Review for movie is small, it may contains spoilers')
       else:
-          return('Review for movie 1 is small, it may not contain spoilers')
-    if (i == 2):
-        if (mp>0.05 and mp1>0.01):
-            return ('Review for movie 2 is small, it contains spoilers')
-        else:
-            return ('Review for movie 2 is small, it may not contain spoilers')
-    if (i == 3):
-        if (mp>0.05 and mp1>0.01):
-            return ('Review for movie 3 is small, it contains spoilers')
-        else:
-            return ('Review for movie 3 is small, it may contain spoilers')
-
+          return('Review for movie is small, it may not contain spoilers')
+    else:
+       return('The reference synopsis for this movie hasnt been updated yet')
 
