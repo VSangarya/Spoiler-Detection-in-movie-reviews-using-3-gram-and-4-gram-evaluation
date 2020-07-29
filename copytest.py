@@ -16,7 +16,7 @@ def copy(i):
                     f1.write(line)
 
 def result(i, mp,mp1):
-    if((i==1 or 2 or 3)):
+    if(0<i<4)):
       if(mp>0.1 and mp1>0.05):
           return('Review for movie contains spoilers')
       else:
@@ -25,7 +25,7 @@ def result(i, mp,mp1):
        return('The reference synopsis for this movie hasnt been updated yet')
 
 def resultshort(i, mp,mp1):
-    if((i==1 or 2 or 3)):
+    if(0<i<4):
       if(mp>0.1 and mp1>0.05):
           return('Review for movie is small, it may contains spoilers')
       else:
