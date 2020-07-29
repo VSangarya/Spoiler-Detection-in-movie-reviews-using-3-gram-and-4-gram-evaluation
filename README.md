@@ -14,3 +14,5 @@ template:
 
 Note : It's primarily designed for large movie reviews with multiple spoilers.
 I've added some sample reviews of Avengers:Endgame (some of which contain spoilers and some don't) for testing purposes
+
+P.S : I'm still a novice in terms of how to handle text data and processing. Hence, for the text cleaning and using IF-TDF I've used an open sourced code.(The processing of both the text files in the code)
