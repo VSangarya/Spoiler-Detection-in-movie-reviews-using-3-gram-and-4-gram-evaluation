@@ -87,7 +87,7 @@ def samplefunction():
 
           for line in file2_docs:
               query_doc = [w.lower() for w in word_tokenize(line)]
-              query_doc_bow = dictionary.doc2bow(query_doc)  # update an existing dictionary and create bag of words
+              query_doc_bow = dictionary.doc2bow(query_doc)  
           print(file2_docs)
           print(query_doc)
 
